@@ -1,0 +1,2 @@
+Martes.Estudiante
+Martes.Alumno

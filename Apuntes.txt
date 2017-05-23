@@ -1,0 +1,593 @@
+15/05/2016
+
+ip: \\192.168.1.78
+
+correo: monsh8a@gmail.com
+
+twitter: @imonsh
+
+repositorio: github/fernandaochoa 
+repositorio: github/cursojavaadvancedculiacan
+
+Temario:
+
+Lunes:
+
+- Clases
+
+Martes: 
+
+- Objetos, Herencia
+
+Miercoles:
+Jueves:
+Viernes:
+
+Ejercicio:
+
+- Diagrama uml
+- Algoritmo
+- Pojo
+
+- Clase prueba
+- Singleton
+- Interface
+- Abstract
+
+16/05/2016
+
+Objeto: Entidad del mundo real que posee tres
+
+caracteristicas: comportamiento, estado, identidad.
+
+Estado: Representa el calor de un objeto.
+
+Comportamiento: Representa la funcionalidad que poseee el objeto.
+
+Identidad: Un objeto es tipicamente implementado con
+el calor del id no es visible para el usuario final, pero
+es usado internamente por la JVM, para idetificar cada objeto
+de manera unica.
+
+Un objeto es una instancia de una clase.
+
+CLASE: Es un grupo que tinene propiedades comunes.
+
+Es una plantilla para modelar los objetos que se crean.
+
+Una clase contiene: 
+
+- Campos
+- Meotodos
+- Constructores
+- Bloques
+- Clases anidadas e interfaces.
+
+Instance variable:
+s1
+a1
+
+Formas de inicializar un objeto:
+- Variablew referencia
+- Por metodo
+- Constructor
+
+Argumento != Parametro
+
+Argumento: es uno
+Parametro: Es un rango
+
+Constructor:
+
+Reglas:
+ 
+a) La signatura del constructor debe ser la misma
+que la de la clase que lo contiene.
+
+b) No tiene un valor de retorno explicito.
+
+Tipo:
+
+1.- Default.
+2.- Parametriuzado
+
+Contructor:
+
+- Se usa para inicializaar un objeto
+- No tiene tipo de retorno
+- Es invocado implicitamente
+- El compilador de java provee un constructor por default si no tiene uno
+- El constructor debe contener la misma signatura de la clase.
+
+Metodo:
+
+- Es usado para explicar el comportamento de un objeto
+- Tiene un valor de retorno
+- Es invocado explicitamente
+- No lo provee ni el compilador ni la clase
+- Puede tener o no la misma signatura de la clase que lo tiene
+
+Static:
+
+La palabra reservada static es usada principalmente para la administracion de memoria
+se puede tener:
+
+- Variables estaticas.
+- metodos estaticos.
+- bloques.
+- clases anidadas.
+
+Si declaras una variable estaticas puede ser usada para dos
+referir una propíedad en comn con todos los objetos
+
+La variable estatica obtiene memoria solo una vez
+al momento de ser cargada a la clase.
+
+Ventajas:
+
+- Vuelve tu codigo mas eficiente (ahorras memoria)
+
+Si se aplica la palabra reservada static a cualquier 
+metodo, se conoce como un metodo estatico.
+
+Un metodo estatico solo pertenece a la clases en de objeto de un a clase en lugar
+de un objeto de una clase.
+
+Se puede invocar un metodo estatico sin necesidad de 
+crear una instacina de una clase.
+
+El metodo estatico puede acceder el miembro de datos 
+estaticos y puede cambiar el valor del mismo.
+
+Existen dos restricciones principales de un metodo estatico.
+
+- No puede utilizar un dato no estatico o llamar 
+directamente al metodo no estatico.
+- This y Super no se pueden utilizar en un contexto estatico.
+
+This.
+
+Se trata de una variable referencia al objeto actual.
+
+- This puede ser usada para referir a la instruccion de la clase actual.
+- This se utiliza para invocar el metodo de la clase actual (implicitamente)
+- This() se utiliza para invocar al constructor de la clase actual.
+- This se puede pasar como un argumento en la llamada al metodo.
+- This puede ser pasdado como argumento en la llamada al constructor.
+- This puede utilizar para devolver la instrucion actual del metodo.
+
+This:
+
+Se puede utilizar en:
+
+- Instancia al metodo.
+- Metodo al constructor.
+- Constructor instancia actual del metodo.
+
+Si una clase tiene varios metodos que tienen en mismo 
+nombre pero diferenres en parametros, se conoce como
+sobrecarga.
+
+Si tenemos que raelizar una sola operacion, tener el
+mismo nombre de los metodos aumenta la legitibilidad del
+programa.
+
+Ventajas:
+
+- Aumenta la legitibilidad del programa
+- Diferentes maneras de sobrecargar un metodo
+
+17/05/2017
+
+Formas de sobrecargar un metodo:
+
+- Cambiando el numero de argumentos
+- cambiando el tipo de datos
+
+Si una subclase tiene el mismo metodo que se decalra
+en la clase padre, se conoce como redefinicion.
+
+Si la subclase proporciona la implementacion especifica
+del metodo que ha sido previamente proporcionado en su
+clase padre se conoce como redefinicion del metodo.
+
+Uso del override en java:
+
+- Proporcionar implementaciones especificas a metodos heredados.
+- Proporcionan los mecanismos que permiten el polimorfismo
+
+Reglas para el override:
+
+- Mismo nombre que en la clase padre.
+- Mismo paramentro que en la clase padre
+- Relacionados IS-A
+
+La palabra reservada super es una vatiable de referencia
+al objeto inmediato de la clase padre.
+
+Siempre que se crea la instacnia de la subclase, se crea
+una instancia de la superclase implicitamente a laque se
+refiere por super-variable.
+
+Uso de la palabra reservada super:
+
+- Super refiere a la variable de iunstancia del padre
+- super invoca al metodo de la clase padre
+- super() invoca al constructor de la clase padre
+
+Una clase que se declara obstracta necesita de la palabra
+abstract 
+proceso de ocultar los detalles de implementacin y mostrar solo la funcionadad del usuario.
+
+Hay dos maneras de lograrlo la abstraccion 
+
+- Clase abstracta (0 a 100%)
+- Interface (100%)
+
+Una clase que se declara abstract no se conoce como clase 
+abstracta. Tiene que heredarse y sus metodos ddeben ser
+implementados. No puede instanciarse.
+
+Un metodo se declara abstract cuando no tiene implementacion
+y tiene la palabra reservada abstract.
+
+Tarea:
+
+- Herencia
+* animal
+
+- Overload
+* add (Sobrecarga)
+
+- Override
+* Banco (Redefinicion)
+	- mismo nombre
+	- mismo tipo
+	- mismos args
+
+- Super
+* Variable, metodo, constructor
+
+- Abstract
+* Clases, metodos (0% a 100%)
+	- Abstract
+	- Extends
+	- Implement
+
+- Interface
+
+Una interfaz es un plano de una clase.
+
+Tiene constantes estaticas y metodos abstractos.
+
+Es un mecanismo que mermite la abstraccion.
+
+Solo puede contener metodos abstractos.
+
+Permite la herencia multiple.
+
+No se puede instanciar como una clase abstracta.
+
+Razones para usar una interface:
+
+- Por interface podemos apoyar la funcionalidad de 
+herencia multiple.
+
+- Se utiliza para lograr el desacoplamiento.
+
+*Java 8: Puede contener metodos predeterminados estaticos.
+
+Abstract:
+
+- Tiene metodos abstractos y no abstractos.
+- Usa la palabrar reservada abstract.
+- Puede proveer la implmemntacion de una interface.
+- No soporta la herencia multiple.
+- Puedes tener variables estaticas, finales, no finales y
+no estaticas.
+
+Interface:
+
+- Solo puede contener metodos abstractos y en J8 tiene.
+metodos por default y estaticos.
+- Soporta la herencia multiple.
+- Solo tiene variables estaticas y finales.
+- No puede proveer la implementacion de una clase abstracta.
+- Usa la palabra reservada interface.
+
+Excepcion:
+
+Es una condicion anormal.
+
+Formas de manipular una excepcion:
+
+- try
+- catch
+- throw
+- throws
+- finally
+
+Thread: Via por donde se ejecutan tareas de un programa.
+
+- Multitheading: Multihilos.
+- Life cycle thread: Ciclo de vida de los hilos (New, Runnable, Running, Non-runable, Terminated)
+- Sleeping a thread: Detener un hilo.
+- Shutdown hook: Ejecutar hilos cuando se va apagar la MVJ, es utilizada para limpiar variables.
+- Daemon: Hilos que se ejecutan al apagar la MVJ.
+- Pull Thread: Conjunto de hilos en espera de tareas.
+- Synchronized: Sincronizacion de hilos para no realizar la misma tarea al mismo tiempo.
+
+18/05/2017
+
+Paralelismo: LLavar acabo dos o mas tareas simulaneas.
+
+Concurrencia: Dos o mas componentes independientes que se ayudan para realizar una tarea.
+
+Multitarea: LLevar acabo dos o mas tareas paralelas o no.
+
+Formas de utilizar los Thread: 
+
+- Thread (extends)
+- Runnable (implements)
+
+Paralelismo:
+
+Multihilos en java: Es el proceso para ejecutar muchos hilos de manera simultanea.
+
+Hilo: Subprocesos ligeros, unidad muy pequeña de procesamiento
+(Concurrencia) Multiprocesamiento y Multihilo se utilizan
+para lograr la multitarea, en la concurrencia pueden o no ser
+multiprocesamiento.
+
+Ventajas de usar hilos:
+
+- NO bloqueamos al usuario por que son tareas independientes y 
+se pueden realizar muchas tareas al mismo tiempo.
+- Podemos realizar muchas tareas al mismo tiempo.
+- Los hilos al ser independientes no se afectan entre si, en
+caso de ocurrir una excepcion en un hilo los demas funcionan
+igual.
+
+Multitarea: Proceso de ejecucion de muchas tareas, usamos la multitarea
+para utilizar el CPU. La multitarea se logra de dos maneras.
+
+- Multitarea basada en procesos.
+	* Cada proceso tiene su propia direccion en memoria.
+	* Es decir, cada proceso asigna un area separada de memoria.
+	
+	* El proceso es pesado.
+	  	* El costo de la comunicacion entre el proceso es alto.
+	  	* Cambiar de un proceso a otro requiere de tiempo para guardar.
+	  	* Y cargar registros, mapas de memoria, listas de actualizacion.
+	  	* etc.
+
+- Multitarea basada en hilos (Multihilos)
+	* Los hilos comparten los mismos espacios en memoria para:
+		* Direcciones
+	  	* El hilo es ligero
+	 	* El costo de comunicacion entre hilos es bajo.
+
+Un hilo es un subproceso ligero, es independiente, si se produce
+una excepcion en un hilo no afecta a los demas hilos y comparten un
+area de memoria en comun.
+
+Ciclo de vida de un hilo.
+
+- New: El hilo esta en este estado, si se crea una instancia 
+de la clase Thread pero antes de la invonacion del metodo start().
+
+- Runnable: El hilo esta en este estado, despues de la 
+invocacion del metodo start(), pero el thread scheduler
+(Administrador de hilos) no lo ha seleccionado como el hilo
+en ejecucion.
+
+- Running: El hilo esta aqui cuando el Thread Scheduler lo ha
+seleccionado.
+
+- Non-runnable (Blocked): es el estado cuando el hilo sigue activo
+sin embargo no es apto para ejecutarse.
+
+- Terminated: Es el estado cuando ha finalizado o muerto, 
+cuando sale del metodo run().
+
+Hay 2 formas de crear un hilo:
+
+- Al extender de la clase Thread.
+- Al implementar la interface Runnable.
+
+Clase Thread
+
+Proporciona los constructores y metodos para crear y realizar
+operaciones en un hilo. La clase Thread extiende de la clase
+object e implementa la interface Runnable.
+
+Constructores de la clase Thread:
+
+- Thread()
+- Thread(String name)
+- Thread(Runnable r)
+- Thread(Runnable r, String name)
+
+Runnable:
+
+La interfaz Runnable debe ser implementada por cuanquier
+clase cuyas instancias esten destinadas a ser ejecutadas
+por un hilo.
+
+La interfaz Runnable tiene un solo metodo denominado
+run().
+
+Public void run(): es un estado para realizar las operaciones
+del hilo.
+
+Metodos de la clase Thread:
+
+- run()
+- start()
+- clone()
+- yleld()
+
+- getPriority()
+- getName()
+- setPriory()
+- setName()
+
+- currentThread()
+- getId()
+- getState()
+- isAlive()
+
+- stop()
+- isDeamon()
+- setDeamon()
+- interrumpt()
+
+- suspend(): Este metodo pone a un hilo en estado de suspendido y puede ser activado usando el metodo resume().
+
+- interupted(): Una interrupcion es una indicacion al hilo de que este debe de detener lo que esta haciendo
+		y hacer algo mas. Es desicion del programador decidir exactamente como va a responder el hilo 
+		a una interrupcion.
+
+- isInterrepted(): Comprueba si el hilo ha sido interrumpido. El estado interrumpido del hilo no se ve 
+		   afectado por este método.
+
+- join(): Permite que un hilo espere a la terminacion de otro. Puede utilizarse para pausar la ejecución 
+	  del hilo actual hasta que el hilo especificado esté muerto.
+
+Escribir en archivos:
+
+Outputstream:
+
+- FileInputStream
+
+- ByteArrayInputStream
+	- DataOutputStream
+
+- FilterOutputStream
+	- BufferedOutputStream
+
+InputStream:
+
+- FileInputStream
+
+- ByteArrayInputStream
+	- DataInputStream
+
+- FilterInputStream
+	- BufferedInputStream
+
+Menu de opciones:
+
+- Entrada
+	- FileOutput
+	- ByteArrayOutput
+	- FilterOutput
+
+- Salida
+	- FileInput
+	- ByteArrayInput
+	- FilterInput
+
+Git:
+
+git config -global user.name ""
+
+git config --global user.email ""
+
+Sockets:
+
+Networking es un concepto de conectividad entre 2
+o mas dispositivos juntos, que comparten recursos.
+
+La programacion de sockets proporciona la facilidad
+para compartir datos entre diferentes dispositivos.
+
+Ventajas de networking en java:
+
+- Compartir recursos
+- Centralizar la gestion del software
+
+Conceptos:
+
+- Direccion ip: Numero dinamico asignado a un nodo de
+una red compuesto por octetos que van del 0 al 255 
+Es una direccion logica que puede sesr cambiada.
+
+- Protocolo: COnjunto de reglas que se establecen para 
+la comuynicacion. Ej: ETP, TCP, Telnet, SMTP, POP, etc.
+
+- MAC: (Media Access Control) Identidicador unico del NIC
+(Network Interface Controller). Un nodo de red puede
+tener multiples NIC, pero solo un MAC unico.
+
+Protocolo orientado a la comunicacion:
+
+Conection - Oriented
+
+Es un protocolo de tipo TCP, TCP/IP, confiable pero
+lento. El acuse de recibo es enviado por el receptor.
+
+Connection - Less
+
+El receptor no envia el acuse de recibo.
+Es rapido, sin embargo no es confiable. Ej: UDP.
+
+Socket: Punto final en una conexion Bidireccional.
+
+La profeamacion de sockets se utiliza para la 
+comunicacion entre las aplicaciones que se 
+ejecutan entre diferentes aplicaciones JRE.
+Java Runtiem Envorioment.
+
+La progamacion de sockets puede ser orientada a
+conexion o sin conexion.
+
+Las clases Java Socket y ServerSocket
+Son usadas para la programacion orientada a la comunicacion
+
+Las clases Java Socket y ServerSocket
+Contection Oriented
+
+Las clases DatagramSocket y DatagramPacket
+Conection Less
+
+El cliente del socket necesita saber:
+
+- IP Address del Server
+- Port Number
+- Socket Class
+
+Socket Class:
+
+- Metodos:
+	- Public InputStream getInputStream()
+		regresa el is adjunto con el socket
+	- Public OutputStream getOutputStream()
+		regresa el os adjunto con el socket
+	- Public synchronized void close()
+		cerrar el socket
+
+Server Socket:
+
+- Metodos
+	- Public Socket accept()
+		Establece la conexion entrante
+	- Public synchronized void cloase()
+		Cierra la conexion
+
+Informacion que contiene una URL
+
+Protocol: En este caso http es el protocolo.
+Server Name o IP Address: oracle y codigofacilito
+Port Number: Es un atributo opcional, si 
+escribimos google.com:80, 80 es el puerto
+Si el puerto no es mencionado en la URL regresa -1}
+File Nmae o Directory Name: /articulos/nombre
+
+Crear repositorio por terminal git:
+
+- git init
+- git add
+- git commit -m
+- git remote add origin url
+- git push origin master
